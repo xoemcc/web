@@ -9,7 +9,7 @@
   --bg: #f7f2ed;
   --fg: #3d3735;
 
-  --accent: #d8884b;
+  --accent: #4a76ce;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,6 +70,7 @@ h6 {
 }
 
 .home-head {
+  letter-spacing: 2px;
   width: fit-content;
   text-align-last: justify;
   margin: 0 auto;
