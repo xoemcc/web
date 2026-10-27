@@ -1,0 +1,79 @@
+@import "styles/typo.css";
+@import "styles/fonts.css";
+
+:root {
+  --font-display: "Bricolage Grotesque";
+  --font-body: "Cabin";
+
+  --bg: #f7f2ed;
+  --fg: #3d3735;
+
+  --accent: #d8884b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #292929;
+    --fg: #f4f3f2;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  color: var(--accent);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+main {
+  margin: 0 auto;
+  width: max-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  letter-spacing: 1.5px;
+}
+
+.home-head {
+  width: fit-content;
+  text-align-last: justify;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.p-tiny {
+  font-family: var(--font-display);
+  font-style: italic;
+  margin-top: -1.25rem;
+  text-align-last: justify;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 0.6rem;
+}
+
+.f-display {
+  font-family: var(--font-display);
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.f-extrabold {
+  font-weight: 800;
+}
