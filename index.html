@@ -1,62 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xoem — home</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1 class="f-display f-extrabold">xoem</h1>
-      </nav>
-    </header>
-    <main>
-      <div class="typo">
-        <h2 class="home-head">
-          apprehensive web dev, posix c wannabe, <br />
-          union organizer in the pretense mines
-        </h2>
-        <p>
-          I'm not a big fan of making one of those portfolio sites organised
-          like a yard sale for your talents. That isn't to say I haven't made
-          one in the past, but considering how bad I was at everything, it
-          becomes very embarassing. I'm now almost wise enough to assume that
-          future me will consider current me very bad at everything.
-        </p>
-        <h2>who art thou?</h2>
-        <p class="p-tiny">
-          O great mountain? before Zerubabbel thou shalt become a plain: and he
-          shall bring forth the headstone thereof with shoutings, crying, grace
-          unto it.
-        </p>
-        <p>
-          I'm Emma, currently finishing up a B.A. at the University of Cape Town
-          with on-paper majors in computer science and history, as well as a
-          third non-official major in philosophy. I self-taught programming when
-          I was fifteen, and since then it's taken up much of my time, but I
-          force myself to grapple with the more traditional arts whenever I can.
-        </p>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>xoem — home</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1 class="f-display f-extrabold">xoem</h1>
+			</nav>
+		</header>
+		<main>
+			<div class="typo">
+				<h2 class="home-head">
+					<span>apprehensive web dev,</span>
+					<span>posix c wannabe,</span>
+					<span>union organiser in the pretense mines</span>
+				</h2>
 
-        <p>
-          On a hobby-project level I'd describe myself as pathologically
-          obsessed with reinventing the wheel as a form of personal development,
-          but I still like to believe I'm good at being pragmatic in serious
-          environments. I find myself particularly fascinated with low-level
-          systems like <code>libc</code> and browser
-          <span class="sm">DOMs</span> both in and of themselves and with the
-          ways we abstract over them.
-        </p>
+				<p>
+					I'm not a big fan of making one of those portfolio sites organised
+					like a yard sale for your talents. That isn't to say I haven't made
+					one in the past, but considering how bad I was at everything, it
+					becomes very embarassing. I'm now almost wise enough to assume that
+					future me will consider current me very bad at everything.
+				</p>
 
-        <p>
-          My more informal writing, in which I am always wrong and missing
-          important details, lives on a
-          <a href="blog.xoem.cc">subdomain</a>.
-        </p>
-        <h2>what crafts dost thou practise?</h2>
-      </div>
-    </main>
-    <script type="module" src="/src/index.ts"></script>
-  </body>
+				<div class="inline-toc">
+					<h2>contents</h2>
+					<ul>
+						<li><a href="#who-art-thou">who art thou?</a></li>
+						<li><a href="#what-crafts">what crafts dost thou practise?</a></li>
+						<li><a href="#what-works">what works hast thou wrought?</a></li>
+						<li><a href="#send-forth">send forth a raven</a></li>
+					</ul>
+				</div>
+				<hr>
+				<h2 id="who-art-thou">who art thou?</h2>
+				<p class="p-tiny">
+					O great mountain? before Zerubabbel thou shalt become a plain: and he
+					shall bring forth the headstone thereof with shoutings, crying, grace
+					unto it.
+				</p>
+				<p>
+					I'm Emma, currently finishing up a B.A. at the University of Cape Town
+					with on-paper majors in computer science and history, as well as a
+					third non-official major in philosophy. I self-taught programming when
+					I was fifteen, and since then it's taken up much of my time, but I
+					force myself to grapple with the more traditional arts whenever I can.
+				</p>
+
+				<p>
+					On a hobby-project level I'd describe myself as pathologically
+					obsessed with reinventing the wheel as a form of personal development,
+					but I still like to believe I'm good at being pragmatic in serious
+					environments. I find myself particularly fascinated with low-level
+					systems like <code>libc</code>
+					and browser
+					<span class="sm">DOMs</span>
+					both in and of themselves and with the
+					ways we abstract over them.
+				</p>
+
+				<p>
+					My more informal writing, in which I am always wrong and missing
+					important details, lives on a
+					<a href="blog.xoem.cc">subdomain</a>.
+				</p>
+				<h2 id="what-crafts">what crafts dost thou practise?</h2>
+				<p>
+					Nailing myself down to a specific subset of computer science has
+					always been tricky. To average it out over a long period, most of the
+					work I've done has been:
+				</p>
+
+				<ul>
+					<li>
+						<b>web</b>
+						—
+						<s-c>HTML</s-c>/<s-c>CSS</s-c>/<s-c>JS</s-c>/<s-c>TS</s-c>/<s-c>SCSS</s-c>/
+						<s-c>SPA</s-c>/<s-c>SSR</s-c>/<s-c>CSR</s-c>/<s-c>SSG</s-c>/<s-c>WOATMUSMTS</s-c>.<sup><a id="ref1" href="#fn1">1</a></sup>
+					</li>
+					<li>
+						<b>frameworks</b>
+						— Svelte mostly, some Next and Nuxt, a bit
+						with Lit, Solid, and other oddballs.
+					</li>
+					<li>
+						<b>app</b>
+						— good in Rust, passable in C and Go, questionable Zig knowledge.
+					</li>
+					<li>
+						<b>design</b>
+						— competent in LaTeX, Typst, Affinity, Figma,
+						and a few other bits and bobs.
+					</li>
+				</ul>
+
+				Overall, I've found myself able to learn whatever I put my mind to, but these are the things I've had enough
+				experience with to put here. I've also toyed many other languages, some game and engine development, and a
+				bunch of other little things.
+
+				<h2 id="what-works">what works hast thou wrought?</h2>
+				<p>
+					To see a list of my completed or usable projects, you can go
+					<a href="/projects">here</a>.
+				</p>
+
+				<h2 id="send-forth">send forth a raven</h2>
+
+				<hr>
+				<footer>
+					<h2>footnotes</h2>
+					<ol class="footnotes">
+						<li id="fn1">
+							<a class="ret" href="#ref1">1</a>
+							Whatever Other Acronyms They've Made Up Since I Made This Site
+						</li>
+					</ol>
+				</footer>
+			</div>
+		</main>
+		<script type="module" src="/src/index.ts"></script>
+	</body>
 </html>

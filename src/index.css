@@ -1,5 +1,6 @@
 @import "styles/typo.css";
 @import "styles/fonts.css";
+@import "styles/latex.css";
 
 :root {
   --font-display: "Bricolage Grotesque";
@@ -10,6 +11,7 @@
   --fg: #3d3735;
 
   --accent: #4a76ce;
+  --accent-dark: #2c55a5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,18 +21,52 @@
   }
 }
 
+#latex {
+  fill: var(--fg);
+}
+
 html,
 body {
   margin: 0;
   height: 100%;
 }
 
+sup {
+  a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+ol.footnotes {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    a.ret {
+      vertical-align: super;
+      font-size: 0.7rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
 .sm {
+  font-variant-caps: all-small-caps;
+}
+
+s-c {
   font-variant-caps: all-small-caps;
 }
 
 a {
   color: var(--accent);
+
+  &:visited {
+    color: var(--accent-dark);
+  }
 }
 
 nav {
@@ -59,6 +95,35 @@ main {
   }
 }
 
+hr {
+  border: none;
+  border-bottom: 1px solid var(--fg);
+}
+
+.inline-toc {
+  h2 {
+    font-size: 1rem;
+  }
+
+  ul {
+    justify-content: space-between;
+    font-size: 0.75rem;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .inline-toc {
+    ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+
 code,
 pre {
   font-family: var(--font-mono);
@@ -79,17 +144,31 @@ h6 {
   letter-spacing: 2px;
   width: fit-content;
   text-align-last: justify;
-  margin: 0 auto;
   text-align: justify;
+  margin: 0 auto;
+
+  span:last-child {
+    display: block;
+  }
 }
 
-.p-tiny {
-  font-family: var(--font-display);
-  font-style: italic;
-  margin-top: -1.25rem;
-  text-align-last: justify;
-  font-weight: bold;
-  font-size: 0.6rem;
+@media (max-width: 600px) {
+  .home-head {
+    text-align: justify;
+    text-align-last: justify;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-head {
+    text-align: justify;
+    text-align-last: justify;
+
+    span {
+      display: block;
+    }
+  }
 }
 
 .f-display {
