@@ -1,5 +1,6 @@
 .typo {
   width: 67ch;
+  max-width: 100%;
   font-family: var(--font-body);
   font-size: 1rem;
 
